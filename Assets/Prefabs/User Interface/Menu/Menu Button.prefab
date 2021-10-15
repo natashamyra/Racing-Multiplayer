@@ -468,10 +468,6 @@ MonoBehaviour:
             m_StringArgument: Hover Out
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!95 &7304336998887034434
 Animator:
   serializedVersion: 3
