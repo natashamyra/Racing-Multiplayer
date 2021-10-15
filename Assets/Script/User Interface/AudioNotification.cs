@@ -18,8 +18,8 @@ namespace GameJam.Audio
             if (source.isPlaying)
             {
                 Debug.Log(source.clip.name);
-                notificationManager.title = "I like the idea of you";
-                notificationManager.description = "Tessa Violet";
+                notificationManager.title = "Budak flat";
+                notificationManager.description = "Aman Ra";
                 notificationManager.UpdateUI();
                 notificationManager.OpenNotification();
             }
