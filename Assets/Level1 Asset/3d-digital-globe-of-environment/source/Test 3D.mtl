@@ -1,0 +1,12 @@
+newmtl Glass_5c43dd51-7203-412b-92cb-c59a62992f0e
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd Panorama_Aishahcrop_1.jpg
+newmtl Glass Extra Thin_7a73e0f0-430b-4c1f-9980-a1c8301561c6
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd colorTexture&opacityTexture.png
+newmtl _2a8fd39b-1645-41d5-9f24-c722778c34f2
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd logo_cuti_cuti_malaysia&logo_cuti_cuti_malaysia_alpha.png
