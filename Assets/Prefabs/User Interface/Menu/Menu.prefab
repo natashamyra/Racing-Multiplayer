@@ -5430,6 +5430,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Quick Start
       objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5517,6 +5521,14 @@ PrefabInstance:
     - target: {fileID: 6455428794734543245, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Name
       value: Button - Quick Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 505.9692
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6583391207087206421, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5606,6 +5618,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f8968a46a9274f7194c495eeef62bea, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &6595260425177942291 stripped
@@ -5623,6 +5639,10 @@ PrefabInstance:
     - target: {fileID: 3544685873191586654, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_text
       value: Host Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
       objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
@@ -5712,6 +5732,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu - Host
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 33.039
+      objectReference: {fileID: 0}
     - target: {fileID: 6583391207087206421, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -5796,6 +5824,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 72be80f3dba2f423c9621d0b1411fa96, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &6595260424930496469 stripped
@@ -5813,6 +5845,10 @@ PrefabInstance:
     - target: {fileID: 3544685873191586654, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_text
       value: Join Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
       objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
@@ -5902,6 +5938,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu - Join
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 47.1987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 101.9489
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16.0475
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24.5433
+      objectReference: {fileID: 0}
     - target: {fileID: 6583391207087206421, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -5986,6 +6038,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1e6b843ab9924a84bf2b5ba1cb1a06e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &6595260424451924136 stripped
@@ -6003,6 +6059,10 @@ PrefabInstance:
     - target: {fileID: 3544685873191586654, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_text
       value: Manage Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
       objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
@@ -6092,6 +6152,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button - Manage Car
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 745.675
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 101.3539
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 261
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 28d637dc9153f48759f77fda78a287bb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &6709708235416236424 stripped
@@ -6198,6 +6278,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button - Options
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 86.5995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 998588a3891ee497aa4d330c5ee9c096, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &8443054424510794665 stripped
@@ -6426,6 +6514,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Profile
       objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6514,6 +6606,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button - Profile
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 501.0117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 164.0983
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fba8e641a2eec430b8542e81d7dff996, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &7660712365061047915 stripped
@@ -6694,6 +6802,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Buy Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6782,6 +6894,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button - Buy Car
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 357.4653
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 192.6383
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 941a3b8488c1244b581a0af4f39fa744, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &119641210390156219 stripped
@@ -6902,15 +7034,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f76113142c8f26429104dcf6a334752, type: 3}
---- !u!114 &2094743339643395724 stripped
+--- !u!114 &869432811927486649 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5010495736080784424, guid: 2f76113142c8f26429104dcf6a334752, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6091688191112954397, guid: 2f76113142c8f26429104dcf6a334752, type: 3}
   m_PrefabInstance: {fileID: 6384660249092752036}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4946016758714799610 stripped
@@ -6924,15 +7056,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &869432811927486649 stripped
+--- !u!114 &2094743339643395724 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6091688191112954397, guid: 2f76113142c8f26429104dcf6a334752, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5010495736080784424, guid: 2f76113142c8f26429104dcf6a334752, type: 3}
   m_PrefabInstance: {fileID: 6384660249092752036}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &5406846232720324571 stripped
@@ -7109,6 +7241,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Sell Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4588577865042974129, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 6455428794734543244, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7197,6 +7333,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button - Sell Car
       objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 234.579
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 114.0333
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519293191567474217, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011733736845374873, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a07f75e58d604d6cadbb486a4c4a4c5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1a53498c42b4940bb2f6a1f8c859c2, type: 3}
 --- !u!224 &4347465873996128295 stripped
