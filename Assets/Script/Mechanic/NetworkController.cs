@@ -16,7 +16,9 @@ namespace GameJam.Mechanic
 
         [Space(10)]
         public TMP_InputField createInputText;
-        public TMP_InputField joinInputText;        
+        public TMP_InputField joinInputText;
+        
+        
 
         void Start()
         {
@@ -27,9 +29,19 @@ namespace GameJam.Mechanic
         //Use this method dont need dontdestroyonload but it will spawn in another level
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (scene.name == "GameLevel")
-            {                
-                PhotonNetwork.Instantiate("Cube", Vector3.zero, Quaternion.identity);
+            if (scene.name == "LevelDesign_1")
+            {
+               Transform emptyPos = SpawnManager.instance.emptyPos; //run the function
+
+                    PhotonNetwork.Instantiate("DummyCar", emptyPos.position, emptyPos.rotation);
+                    GetComponent<SpawnManager>();
+
+
+                //1) Transform emptyPos = SpawnManager.instance.emptyPos;
+
+                //2) *cara susah/advanced
+
+
             }
         }
 
@@ -86,7 +98,7 @@ namespace GameJam.Mechanic
         {
             base.OnJoinedRoom();
 
-            PhotonNetwork.LoadLevel("GameLevel");
+            PhotonNetwork.LoadLevel("LevelDesign_1");
             //PhotonNetwork.Instantiate("Cube", Vector3.zero, Quaternion.identity);
             Debug.Log("Detect spawn");
         }
