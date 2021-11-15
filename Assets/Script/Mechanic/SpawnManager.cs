@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
 {
     public static SpawnManager instance;
 
+    [HideInInspector]
     public Transform emptyPos;
 
     //nak check position
@@ -14,13 +15,15 @@ public class SpawnManager : MonoBehaviour
     public List<Transform> positionTransform;
     public int nextPosition;
 
-    private void Start()
+    private void Awake()
     {
         //singleton
         if (instance == null)
         {
             instance = this;
-        }        
+        }
+
+        GetEmptyPosition();
     }
 
     public void GetEmptyPosition()
@@ -33,6 +36,7 @@ public class SpawnManager : MonoBehaviour
                 nextPosition = i + 1;
                 positionBool[i] = true;
                 emptyPos = positionTransform[i];
+                
             }
         }
         

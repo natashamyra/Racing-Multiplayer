@@ -31,10 +31,12 @@ namespace GameJam.Mechanic
         {
             if (scene.name == "LevelDesign_1")
             {
-               Transform emptyPos = SpawnManager.instance.emptyPos; //run the function
+                //PhotonNetwork.Instantiate("RallyCar", Vector3.zero, Quaternion.identity);
 
-                    PhotonNetwork.Instantiate("DummyCar", emptyPos.position, emptyPos.rotation);
-                    GetComponent<SpawnManager>();
+                Transform emptyPos = SpawnManager.instance.emptyPos; //run the function
+
+                PhotonNetwork.Instantiate("DummyCar", emptyPos.position, emptyPos.rotation);
+                GetComponent<SpawnManager>();
 
 
                 //1) Transform emptyPos = SpawnManager.instance.emptyPos;
