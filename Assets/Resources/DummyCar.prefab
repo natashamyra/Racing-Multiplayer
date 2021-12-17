@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 9162257657794529954}
   - component: {fileID: 9162257657794529964}
   - component: {fileID: -3852810526554886758}
-  - component: {fileID: 1978351512363602881}
+  - component: {fileID: 6209927989153274460}
   m_Layer: 0
   m_Name: DummyCar
   m_TagString: Player
@@ -1641,11 +1641,11 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 1978351512363602881}
+  - {fileID: 6209927989153274460}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &1978351512363602881
+--- !u!114 &6209927989153274460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

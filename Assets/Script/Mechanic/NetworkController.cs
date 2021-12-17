@@ -17,9 +17,9 @@ namespace GameJam.Mechanic
         [Space(10)]
         public TMP_InputField createInputText;
         public TMP_InputField joinInputText;
-        
-        
 
+        public Transform[] SpawnPoint = null;
+             
         void Start()
         {
             PhotonNetwork.ConnectUsingSettings();
@@ -31,12 +31,15 @@ namespace GameJam.Mechanic
         {
             if (scene.name == "LevelDesign_1")
             {
-                //PhotonNetwork.Instantiate("RallyCar", Vector3.zero, Quaternion.identity);
+                //int i = PhotonNetwork.CurrentRoom.PlayerCount - 1;
+                //PhotonNetwork.Instantiate("DummyCar", SpawnPoint[i].position, SpawnPoint[i].rotation);
 
-                Transform emptyPos = SpawnManager.instance.emptyPos; //run the function
+                //PhotonNetwork.Instantiate("DummyCar", new Vector3 (0, 0, 0), Quaternion.identity, 0);
 
-                PhotonNetwork.Instantiate("DummyCar", emptyPos.position, emptyPos.rotation);
-                GetComponent<SpawnManager>();
+                //Transform emptyPos = SpawnManager.instance.emptyPos; //run the function
+
+                //PhotonNetwork.Instantiate("DummyCar", emptyPos.position, emptyPos.rotation);
+                //GetComponent<SpawnManager>();
 
 
                 //1) Transform emptyPos = SpawnManager.instance.emptyPos;
