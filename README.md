@@ -1,2 +1,2 @@
-# RPG-game
-Learning to develop RPG game with Unity
+# Racing-Multiplayer
+Learning to develop multiplayer racing game with Unity

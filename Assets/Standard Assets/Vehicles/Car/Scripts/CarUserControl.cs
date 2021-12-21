@@ -13,7 +13,8 @@ namespace UnityStandardAssets.Vehicles.Car
         //public CarController controller;
         private CarController m_Car; // the car controller we want to use
         PhotonView view;
-        
+        [SerializeField] GameObject camera;
+
         private void Start()
         {
             view = GetComponent<PhotonView>();
@@ -41,7 +42,7 @@ namespace UnityStandardAssets.Vehicles.Car
             }else
             {
                 Destroy (m_Car);
-
+                Destroy(camera);
             }
         }
 
