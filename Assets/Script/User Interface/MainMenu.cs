@@ -41,7 +41,10 @@ namespace GameJam.UI.Menu
         // Update is called once per frame
         void Update()
         {
-
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                Back();
+            }
         }
 
         public static void minusCredit(int value)
@@ -96,7 +99,8 @@ namespace GameJam.UI.Menu
 
         public void Back()
         {
-
+            uiMenu = (UIMenu)1;
+            UIState();
         }
     }
 }
