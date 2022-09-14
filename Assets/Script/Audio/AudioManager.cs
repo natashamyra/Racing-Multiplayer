@@ -14,17 +14,17 @@ namespace GameJam.Audio
         [SerializeField] string musicTitle;
 
         //! TODO: Audio Manager play the music and slowly fades when load screen comes up
-        //! TODO: Auto change music when music finish
-
         
         IEnumerator Start()
         {
+            _audioSource.Play();
             yield return new WaitForSeconds(5f);
 
             if (_audioSource.isPlaying)
             {
-                GetMusicName(_audioSource.name);
-            } 
+                GetMusicName(_audioSource.clip.name);
+            }
+            yield return GetNextMusic();
         }
 
         private void GetMusicName(string music)
@@ -36,9 +36,13 @@ namespace GameJam.Audio
             _audioNotification.MusicTitle(musicTitle, musicArtist);
         }
 
-        private void GetNextMusic()
+        private IEnumerator GetNextMusic()
         {
-            
+            yield return new WaitUntil(() => !_audioSource.isPlaying);
+            int randomMusic = Random.Range(0, _audioPlaylist.MusicClips.Count - 1);
+            _audioSource.clip = _audioPlaylist.MusicClips[randomMusic];
+            _audioSource.Play();
+            yield return GetNextMusic();
         }
     }
 }
