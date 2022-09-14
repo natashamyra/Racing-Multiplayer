@@ -7,22 +7,14 @@ namespace GameJam.Audio
 {
     public class AudioNotification : MonoBehaviour
     {
-        public AudioSource source;
-        public NotificationManager notificationManager;
+        [SerializeField] private NotificationManager _notificationManager;
 
-        // Start is called before the first frame update
-        IEnumerator Start()
+        public void MusicTitle(string title, string artist)
         {
-            yield return new WaitForSeconds(5f);
-
-            if (source.isPlaying)
-            {
-                Debug.Log(source.clip.name);
-                notificationManager.title = "Budak flat";
-                notificationManager.description = "Aman Ra";
-                notificationManager.UpdateUI();
-                notificationManager.OpenNotification();
-            }
+            _notificationManager.title = title;
+            _notificationManager.description = artist;
+            _notificationManager.UpdateUI();
+            _notificationManager.OpenNotification();
         }
     }
-} 
+}
