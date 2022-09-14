@@ -9,6 +9,8 @@ namespace GameJam.Audio
     /// </summary>
     public class AudioPlaylist : MonoBehaviour
     {
-        
+        [SerializeField] List<AudioClip> _musicClips;
+
+        public List<AudioClip> MusicClips => _musicClips;
     }
 }
