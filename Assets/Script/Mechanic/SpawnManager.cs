@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
             instance = this;
         }
 
-        GetEmptyPosition();
+        // GetEmptyPosition();
     }
 
     public void GetEmptyPosition()
