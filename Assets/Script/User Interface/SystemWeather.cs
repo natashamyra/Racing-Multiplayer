@@ -56,7 +56,7 @@ namespace GameJam.UI.Weather
                     response = JsonUtility.FromJson<WeatherResponse>(wr.downloadHandler.text);
 
                     weatherText.SetText($"{response.weather[0].main}");
-                    temperatureText.SetText($"{response.main.temp} ?C");
+                    temperatureText.SetText($"{response.main.temp} °C");
 
                     UpdateIcon(response.weather[0].main);
                 }
