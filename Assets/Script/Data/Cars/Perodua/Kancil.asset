@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea5edef53d6c0146a6458355be34892, type: 3}
   m_Name: Kancil
   m_EditorClassIdentifier: 
-  _carModel: 
-  _carMake: 
+  _carModel: Kancil
+  _carMake: Perodua
   _carYear: 0
   _driveTrain: 0
   _carPower: 0
