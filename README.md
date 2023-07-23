@@ -14,9 +14,12 @@ TO DO basic simple items in order for UI to function
 - Save Load system
 
 TO DO UI Items:
-- [ ] add inside garage ui
+- [ ] Add inside garage ui
   - [ ] Manage Cars
   - [ ] Buy Cars
   - [ ] Sell Cars
   - [ ] Player Profile
   - [ ] Game Options
+
+TO DO Misc
+- [ ] Add Audio Manager into bootstrapper list
