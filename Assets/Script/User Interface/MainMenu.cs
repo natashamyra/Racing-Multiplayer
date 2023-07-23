@@ -16,16 +16,22 @@ namespace GameJam.UI.Menu
         [SerializeField] private Button _multiplayerButton;
         [SerializeField] private Button _practiseButton;
         [SerializeField] private Button _garageButton;
+
+        [SerializeField] private Button _manageCarButton;
+        [SerializeField] private Button _buyCarButton;
+        [SerializeField] private Button _sellCarButton;
+        [SerializeField] private Button _profileButton;
+        [SerializeField] private Button _optionButton;
         #endregion
 
-        #region Panels
+        #region Main Panels
         [Header("UI - Panels")]
         [SerializeField] private GameObject _mainPanel;
         [SerializeField] private GameObject _multiplayerPanel;
         [SerializeField] private GameObject _garagePanel;
         #endregion
 
-         #region Multiplayer Panel
+        #region Multiplayer Panel
         [Header("UI - Button Multiplayer")]
         [SerializeField] private Button _multiplayerQuickStartButton;
         [SerializeField] private Button _multiplayerHostButton;
@@ -38,7 +44,16 @@ namespace GameJam.UI.Menu
         [SerializeField] private GameObject _lookForGamePanel;
         [SerializeField] private GameObject _multiplayerHostPanel;
         [SerializeField] private GameObject _multiplayerJoinPanel;
-        
+        #endregion
+
+        #region Garage Panel
+
+        [Header("UI - Garage")] 
+        [SerializeField] private GameObject _manageCarPanel;
+        [SerializeField] private GameObject _buyCarPanel;
+        [SerializeField] private GameObject _sellCarPanel;
+        [SerializeField] private GameObject _profilePanel;
+        [SerializeField] private GameObject _optionPanel;
         #endregion
 
         /// <summary>
@@ -56,9 +71,21 @@ namespace GameJam.UI.Menu
             Garage,
             QuickStart,
             Host,
-            Join
+            Join,
         }
+        public enum  UIGarage
+        {
+            None,
+            ManageCar,
+            BuyCar,
+            SellCar,
+            Profile,
+            Option
+        }
+        
+        [Header("UI - State")]
         public UIMenu uiMenu;
+        public UIGarage uiGarage;
 
         [Header("Text in Garage")]
         public TextMeshProUGUI menuText;
@@ -84,10 +111,18 @@ namespace GameJam.UI.Menu
             _multiplayerQuickStartButton.onClick.AddListener(() => Next(5));
             _multiplayerHostButton.onClick.AddListener(() => Next(6));
             _multiplayerJoinButton.onClick.AddListener(() => Next(7));
+            
+            _manageCarButton.onClick.AddListener(()=>NextGarage(1));
+            _buyCarButton.onClick.AddListener(()=>NextGarage(2));
+            _sellCarButton.onClick.AddListener(()=>NextGarage(3));
+            _profileButton.onClick.AddListener(()=>NextGarage(4));
+            _optionButton.onClick.AddListener(()=>NextGarage(5));
+            
+            Next();
         }
 
 
-        public static void minusCredit(int value)
+        public static void MinusCredit(int value)
         {
             if (Instance.credit >= value)
             {
@@ -116,9 +151,6 @@ namespace GameJam.UI.Menu
 
             switch (uiMenu)
             {
-                case UIMenu.None:
-
-                    break;
                 case UIMenu.Menu:
                     menuText.SetText("Menu");
                     _mainPanel.SetActive(true);
@@ -166,13 +198,24 @@ namespace GameJam.UI.Menu
                     _multiplayerLoadPanel.SetActive(true);
                     _multiplayerJoinPanel.SetActive(true);
                     break;
+                default:
+                    _mainPanel.SetActive(true);
+                    _multiplayerPanel.SetActive(false);
+                    _garagePanel.SetActive(false);
+                    break;
             }
         }
 
-        public void Next(int menuInt)
+        public void Next(int menuInt = default)
         {
             uiMenu = (UIMenu)menuInt;
             UIState();
+        }
+
+        public void NextGarage(int subMenuInt = default)
+        {
+            uiGarage = (UIGarage)subMenuInt;
+            //UISubState();
         }
     }
 }
