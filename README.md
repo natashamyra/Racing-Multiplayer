@@ -7,10 +7,15 @@ Photon PUN 2
 # Engine version
 Unity 2020.3.1f1
 
+# Dev Log
+
+
 # Roadmap
 TO DO basic simple items in order for UI to function
 - Inventory
-  - [ ] Car
+  - [x] Car
+- [ ] Player Data
+- [ ] Game Settings
 - Save Load system
 
 TO DO UI Items:
