@@ -17,7 +17,7 @@ namespace GameJam.UI
 
         private void Start()
         {
-            _bootstrapper = Bootstrapper.Instance;
+            if(!_bootstrapper) _bootstrapper = Bootstrapper.Instance;
             _bootstrapper.PlayerData.OnDataChanged += UpdateUIData;
         }
 

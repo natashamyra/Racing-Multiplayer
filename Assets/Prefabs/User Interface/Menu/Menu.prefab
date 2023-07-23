@@ -1241,7 +1241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5936979396264364238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1512,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4039322965147307020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1663,7 +1663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &382727699282392157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2575,7 +2575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6976247532805294102
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4523,7 +4523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3356611402761289794
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5215,10 +5215,9 @@ MonoBehaviour:
   _sellCarPanel: {fileID: 0}
   _profilePanel: {fileID: 0}
   _optionPanel: {fileID: 0}
-  credit: 1000
   uiMenu: 0
+  uiGarage: 0
   menuText: {fileID: 7870505028505860630}
-  crText: {fileID: 1888618924556600167}
   chosenCarText: {fileID: 8841313847793544075}
 --- !u!114 &148997160010202971
 MonoBehaviour:
