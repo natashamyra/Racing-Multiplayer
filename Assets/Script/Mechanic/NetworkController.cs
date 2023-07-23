@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using System.IO;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -19,11 +17,13 @@ namespace GameJam.Mechanic
         public TMP_InputField joinInputText;
 
         public Transform[] SpawnPoint = null;
-             
-        void Start()
+
+        public void Initialize()
         {
             PhotonNetwork.ConnectUsingSettings();
             SceneManager.sceneLoaded += OnSceneLoaded;
+            
+            Debug.Log("[LOG] : Network Controller Initialized");
         }
 
         //Use this method dont need dontdestroyonload but it will spawn in another level

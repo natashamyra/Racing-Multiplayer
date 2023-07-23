@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace GameJam.UI.Menu
 {
-    public class MainMenu : MonoBehaviour
+    public class MainMenu : Singleton<MainMenu>
     {
         public static MainMenu Instance;
 
@@ -56,12 +56,6 @@ namespace GameJam.UI.Menu
         [SerializeField] private GameObject _optionPanel;
         #endregion
 
-        /// <summary>
-        /// Get this credit from Amyra/Amirul
-        /// </summary>
-        [Space(20)]
-        [SerializeField] int credit = 1000;
-
         public enum UIMenu
         {
             None,
@@ -89,20 +83,9 @@ namespace GameJam.UI.Menu
 
         [Header("Text in Garage")]
         public TextMeshProUGUI menuText;
-        public TextMeshProUGUI crText;
         public TextMeshProUGUI chosenCarText;
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            if (Instance == null)
-                Instance = this;
-            else Destroy(this);
-
-            Initialize();
-        }
-
-        private void Initialize()
+        public void Initialize()
         {
             _multiplayerButton.onClick.AddListener (() => Next(2));
             _practiseButton.onClick.AddListener (() => Next(3));
@@ -119,26 +102,8 @@ namespace GameJam.UI.Menu
             _optionButton.onClick.AddListener(()=>NextGarage(5));
             
             Next();
-        }
-
-
-        public static void MinusCredit(int value)
-        {
-            if (Instance.credit >= value)
-            {
-                Instance.credit -= value;
-
-                Instance.UpdateCredit();
-            }
-            else
-            {
-                // Play error
-            }
-        }
-
-        void UpdateCredit()
-        {
-            crText.SetText($"Cr. {credit}");
+            
+            Debug.Log("[LOG] : Main Menu initialized");
         }
 
         /// <summary>

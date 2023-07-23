@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,33 @@ namespace GameJam.Data
     {
         [SerializeField] private int _currentCredit = 10000;
 
-        public int CurrentCredit => _currentCredit;
+        #region Delegate
+        public Action OnDataChanged;
+        #endregion
 
+        public void Initialize()
+        {
+            //! To load data to initialize
+            Debug.Log("[LOG] : Player Data initialized");
+        }
+        
+        public void AddCredit(int amount)
+        {
+            _currentCredit += amount;
+            UpdateData();
+        }
+        
+        public void MinusCredit(int amount)
+        {
+            _currentCredit -= amount;
+            UpdateData();
+        }
+        
+        private void UpdateData()
+        {
+            OnDataChanged?.Invoke();
+        }
+        
+        public int CurrentCredit => _currentCredit;
     }
 }
