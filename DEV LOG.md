@@ -5,3 +5,4 @@
     - Bootstrapper - Initialize and handle most of the top level game flow.
     - Manager/Controller - To only handle as what the script's name suggest
       - eg: PlayerData - To only handle anything related to PlayerData.
+- NEXT TO DO List - Bootstrapper

@@ -21,5 +21,8 @@ TO DO UI Items:
   - [ ] Player Profile
   - [ ] Game Options
 
-TO DO Misc
-- [ ] Add Audio Manager into bootstrapper list
+TO DO Misc - Bootstrapper list
+- [ ] Audio Manager
+- [ ] Weather System
+- [ ] Audio Notification
+- [ ] Wallpaper Loader
