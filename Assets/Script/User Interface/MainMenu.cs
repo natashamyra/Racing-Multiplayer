@@ -28,6 +28,7 @@ namespace GameJam.UI.Menu
         [Header("UI - Panels")]
         [SerializeField] private GameObject _mainPanel;
         [SerializeField] private GameObject _multiplayerPanel;
+        [SerializeField] private GameObject _soloPanel;
         [SerializeField] private GameObject _garagePanel;
         #endregion
 
@@ -61,7 +62,7 @@ namespace GameJam.UI.Menu
             None,
             Menu,
             Multiplayer,
-            Practise,
+            Solo,
             Garage,
             QuickStart,
             Host,
@@ -120,7 +121,7 @@ namespace GameJam.UI.Menu
                     menuText.SetText("Menu");
                     _mainPanel.SetActive(true);
                     _multiplayerPanel.SetActive(false);
-
+                    _soloPanel.SetActive(false);
                     _garagePanel.SetActive(false);
                     break;
                 case UIMenu.Multiplayer:
@@ -133,10 +134,12 @@ namespace GameJam.UI.Menu
                     _multiplayerHostPanel.SetActive(false);
                     _multiplayerJoinPanel.SetActive(false);
                     break;
-                case UIMenu.Practise:
-                    menuText.SetText("Practise");
-                    _logoButton.onClick.AddListener(() => Next(1)); 
-
+                case UIMenu.Solo:
+                    menuText.SetText("Solo");
+                    _soloPanel.SetActive(true);
+                    
+                    _mainPanel.SetActive(false);
+                    _logoButton.onClick.AddListener(() => Next(1));
                     break;
                 case UIMenu.Garage:
                     menuText.SetText("Garage");
@@ -164,8 +167,10 @@ namespace GameJam.UI.Menu
                     _multiplayerJoinPanel.SetActive(true);
                     break;
                 default:
+                    menuText.SetText("Menu");
                     _mainPanel.SetActive(true);
                     _multiplayerPanel.SetActive(false);
+                    _soloPanel.SetActive(false);
                     _garagePanel.SetActive(false);
                     break;
             }

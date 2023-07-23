@@ -1,5 +1,7 @@
 ###### 24 July 2023 - Car Data
 - Added basic car inventory data in order to proceed with UI
+- Change 'Practise' screen to 'Solo' screen
+- Add dummy map into 'Solo' screen
 
 ###### 23 July 2023 - Picking up what I have left behind
 - UI to follow MVP design pattern
