@@ -9,8 +9,10 @@ public class BootstrapperData : ScriptableObject
     [SerializeField] private bool _initializeMainMenu;
     [SerializeField] private bool _initializePlayerData;
     [SerializeField] private bool _initializeNetworkController;
+    [SerializeField] private bool _initializeCarInventory;
 
     public bool InitializeMainMenu => _initializeMainMenu;
     public bool InitializePlayerData => _initializePlayerData;
     public bool InitializaNetworkController => _initializeNetworkController;
+    public bool InitializaCarInventory => _initializeCarInventory;
 }

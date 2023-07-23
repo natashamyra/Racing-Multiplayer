@@ -19,16 +19,20 @@ namespace GameJam.Core
         [SerializeField] private MainMenu _mainMenu;
         [SerializeField] private PlayerData _playerData;
         [SerializeField] private NetworkController _networkController;
+        [SerializeField] private CarInventory _carInventory;
 
         private void Awake()
         {
             if(_bootstrapperData.InitializeMainMenu) _mainMenu.Initialize();
             if(_bootstrapperData.InitializePlayerData) _playerData.Initialize();
             if(_bootstrapperData.InitializaNetworkController) _networkController.Initialize();
+            if(_bootstrapperData.InitializaCarInventory) _carInventory.Initialize();
+            
         }
 
         public MainMenu MainMenu => _mainMenu;
         public PlayerData PlayerData => _playerData;
         public NetworkController NetworkController => _networkController;
+        public CarInventory CarInventory => _carInventory;
     }
 }
