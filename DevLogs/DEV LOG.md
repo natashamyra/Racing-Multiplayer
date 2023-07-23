@@ -6,3 +6,4 @@
     - Manager/Controller - To only handle as what the script's name suggest
       - eg: PlayerData - To only handle anything related to PlayerData.
 - NEXT TO DO List - Bootstrapper
+![](https://github.com/natashamyra/Racing-Multiplayer/DevLogs/GIFS/2023/20230723_log1.gif)
