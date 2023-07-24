@@ -23,6 +23,10 @@ namespace GameJam.Core
 
         private void Awake()
         {
+            #if !UNITY_EDITOR
+                Application.targetFrameRate = 60;
+            #endif
+
             if(_bootstrapperData.InitializeMainMenu) _mainMenu.Initialize();
             if(_bootstrapperData.InitializePlayerData) _playerData.Initialize();
             if(_bootstrapperData.InitializaNetworkController) _networkController.Initialize();
