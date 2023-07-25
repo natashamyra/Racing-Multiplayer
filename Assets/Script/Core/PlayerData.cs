@@ -12,7 +12,6 @@ namespace GameJam.Data
     {
         [SerializeField] private int _currentCredit = 10000;
         [SerializeField] private PlayerProfile _playerProfile;
-        [SerializeField] private Settings _playerSettings;
 
         #region Delegate
         public Action OnDataChanged;
