@@ -3,6 +3,10 @@
 - Add target framerate into ui
 - Add settings initialization into bootstrapper
 ![25 July Log](https://github.com/natashamyra/Racing-Multiplayer/blob/ui-design/DevLogs/GIFS/2023/20230726_log2.png)
+- Add game logo
+- Add game splash screen
+- Prefab main components in Main Menu scene
+![25 July Log](https://github.com/natashamyra/Racing-Multiplayer/tree/feat/Settings/DevLogs/GIFS/2023/20230723_log3.gif)
 
 ###### 24 July 2023 - Car Data
 - Added basic car inventory data in order to proceed with UI
