@@ -1,8 +1,9 @@
-###### 27 July 2023 - Garage Logic
+###### 27 July 2023 - Garage UI Logic
 - Add garage submenu logic
   - Open and close panels
 - Complete Display option panel
 - Complete Audio option panel
+- Add basic audio mixer
 
 ###### 25 July 2023 - Player Settings
 - Refine settings ui (Display)
