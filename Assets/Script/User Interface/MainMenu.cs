@@ -28,6 +28,7 @@ namespace GameJam.UI.Menu
         [Header("UI - Panels")]
         [SerializeField] private GameObject _mainPanel;
         [SerializeField] private GameObject _multiplayerPanel;
+        [SerializeField] private GameObject _soloPanel;
         [SerializeField] private GameObject _garagePanel;
         #endregion
 
@@ -49,6 +50,7 @@ namespace GameJam.UI.Menu
         #region Garage Panel
 
         [Header("UI - Garage")] 
+        [SerializeField] private GameObject _insideGaragePanel;
         [SerializeField] private GameObject _manageCarPanel;
         [SerializeField] private GameObject _buyCarPanel;
         [SerializeField] private GameObject _sellCarPanel;
@@ -61,7 +63,7 @@ namespace GameJam.UI.Menu
             None,
             Menu,
             Multiplayer,
-            Practise,
+            Solo,
             Garage,
             QuickStart,
             Host,
@@ -120,7 +122,7 @@ namespace GameJam.UI.Menu
                     menuText.SetText("Menu");
                     _mainPanel.SetActive(true);
                     _multiplayerPanel.SetActive(false);
-
+                    _soloPanel.SetActive(false);
                     _garagePanel.SetActive(false);
                     break;
                 case UIMenu.Multiplayer:
@@ -133,15 +135,18 @@ namespace GameJam.UI.Menu
                     _multiplayerHostPanel.SetActive(false);
                     _multiplayerJoinPanel.SetActive(false);
                     break;
-                case UIMenu.Practise:
-                    menuText.SetText("Practise");
-                    _logoButton.onClick.AddListener(() => Next(1)); 
-
+                case UIMenu.Solo:
+                    menuText.SetText("Solo");
+                    _soloPanel.SetActive(true);
+                    
+                    _mainPanel.SetActive(false);
+                    _logoButton.onClick.AddListener(() => Next(1));
                     break;
                 case UIMenu.Garage:
                     menuText.SetText("Garage");
                     _logoButton.onClick.AddListener(() => Next(1));
                     _garagePanel.SetActive(true);
+                    NextGarage();
                     break;
                 case UIMenu.QuickStart:
                     _logoButton.onClick.AddListener(() => Next(2));
@@ -164,8 +169,10 @@ namespace GameJam.UI.Menu
                     _multiplayerJoinPanel.SetActive(true);
                     break;
                 default:
+                    menuText.SetText("Menu");
                     _mainPanel.SetActive(true);
                     _multiplayerPanel.SetActive(false);
+                    _soloPanel.SetActive(false);
                     _garagePanel.SetActive(false);
                     break;
             }
@@ -177,10 +184,60 @@ namespace GameJam.UI.Menu
             UIState();
         }
 
+        private void UIGarageSubState()
+        {
+            _logoButton.onClick.AddListener(() => Next(4));
+            _manageCarPanel.SetActive(false);
+            _buyCarPanel.SetActive(false);
+            _sellCarPanel.SetActive(false);
+            _profilePanel.SetActive(false);
+            _optionPanel.SetActive(false);
+            
+            switch (uiGarage)
+            {
+                case UIGarage.ManageCar:
+                    _insideGaragePanel.SetActive(false);
+                    _manageCarPanel.SetActive(true);
+                    
+                    break;
+                
+                case UIGarage.BuyCar:
+                    _insideGaragePanel.SetActive(false);
+                    _buyCarPanel.SetActive(true);
+                    
+                    break;
+                
+                case UIGarage.SellCar:
+                    _insideGaragePanel.SetActive(false);
+                    _sellCarPanel.SetActive(true);
+                    
+                    break;
+                
+                case UIGarage.Profile:
+                    _insideGaragePanel.SetActive(false);
+                    _profilePanel.SetActive(true);
+                    
+                    break;
+                
+                case UIGarage.Option:
+                    _insideGaragePanel.SetActive(false);
+                    _optionPanel.SetActive(true);
+                    
+                    break;
+
+                default:
+                    menuText.SetText("Garage");
+                    _logoButton.onClick.AddListener(() => Next(1));
+                    _insideGaragePanel.SetActive(true);
+
+                    break;
+            }
+        }
+        
         public void NextGarage(int subMenuInt = default)
         {
             uiGarage = (UIGarage)subMenuInt;
-            //UISubState();
+            UIGarageSubState();
         }
     }
 }
