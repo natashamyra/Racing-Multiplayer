@@ -8,12 +8,12 @@ Photon PUN 2
 Unity 2020.3.1f1
 
 # Roadmap
-TO DO basic simple items in order for UI to function
+TO DO basic simple script item in order for UI to function
 - Inventory
   - [x] Car
 - [ ] Player Data
 - [ ] Game Settings
-- Save Load system
+- [ ] Save Load system
 
 TO DO UI Items:
 - [ ] Add inside garage ui
@@ -21,9 +21,10 @@ TO DO UI Items:
   - [ ] Buy Cars
   - [ ] Sell Cars
   - [ ] Player Profile
-  - [ ] Game Options
+  - [x] Game Options
     - [x] Display
     - [x] Audio
+    - [ ] Change modal image
 
 TO DO Misc - Bootstrapper list
 - [ ] Audio Manager
