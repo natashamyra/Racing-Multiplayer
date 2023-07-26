@@ -15,3 +15,5 @@ MonoBehaviour:
   _initializeMainMenu: 1
   _initializePlayerData: 1
   _initializeNetworkController: 0
+  _initializeCarInventory: 0
+  _initilizeSettings: 1
